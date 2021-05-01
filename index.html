@@ -1,0 +1,217 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+ background: 
+-webkit-linear-gradient(#ffff00, #ff4000);
+  padding: 0 10px;
+}
+.wrapper {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.125);
+  padding: 30px;
+}
+
+.wrapper .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;background: 
+-webkit-linear-gradient(#ffff00, #ff4000);
+  -webkit-background-clip: text;-webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form .inputfield {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label {
+  width: 200px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+
+
+
+.wrapper .form .inputfield .custom_select {
+
+  width: 100%;
+  height: 37px;
+}
+
+.wrapper .form .inputfield .custom_select:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  border: 8px solid;
+  border-color: #d5dbd9 transparent transparent transparent;
+  pointer-events: none;
+}
+
+.wrapper .form .inputfield .custom_select select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 1px solid #d5dbd9;
+  border-radius: 3px;
+}
+
+
+
+.wrapper .form .inputfield p {
+  font-size: 14px;
+  color: #757575;
+}
+
+.wrapper .form .inputfield .check {
+  width: 15px;
+  height: 15px;
+  
+  display: block;
+}
+
+
+
+
+
+.wrapper .form .inputfield .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  background: #fec107;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+}
+
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="title">
+    Registration Form
+  </div>
+  <div class="form">
+    <div class="inputfield">
+      <label>First Name</label>
+      <input type="text" class="input">
+    </div>
+    <div class="inputfield">
+      <label>Last Name</label>
+      <input type="text" class="input">
+    </div>
+    <div class="inputfield">
+      <label>Password</label>
+      <input type="password" class="input">
+    </div>
+    <div class="inputfield">
+      <label>Confirm Password</label>
+      <input type="password" class="input">
+    </div>
+
+<div class="inputfield">
+      <label>Lang. known</label>
+      <input type="checkbox" id="e1" name="1" value="html">
+          <label for="1"> HTML</label>
+      <input type="checkbox" id="2" name="2" value="css">
+           <label for="2"> CSS</label>
+      <input type="checkbox" id="3" name="3" value="js">
+           <label for="3"> JS</label>
+    </div>
+
+ <div class="inputfield">
+      <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+    </div>
+
+    <div class="inputfield">
+      <label>Gender</label>
+      <div class="custom_select">
+        <select>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="inputfield">
+      <label>Email Address</label>
+      <input type="text" class="input">
+    </div>
+
+    <div class="inputfield">
+      <label>Phone Number</label>
+      <input type="text" class="input">
+    </div>
+
+    <div class="inputfield">
+      <label>Address</label>
+      <textarea class="textarea"></textarea>
+    </div>
+
+    <div class="inputfield">
+      <label>Postal Code</label>
+      <input type="text" class="input">
+    </div>
+<div class="inputfield">
+<label for="myfile">Upload your image:</label>
+<input type="file" id="myfile" name="myfile">
+</div>
+
+    <div class="inputfield terms">
+      <label class="check">
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </label>
+      <p>Agreed to terms and conditions</p>
+    </div>
+<div class="inputfield">
+      <input type="submit" value="Register" class="btn">
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
